@@ -22,7 +22,7 @@ const AWSCloud = () => {
         {
             title: <h2 className="text-[2.7rem]">Disaster <br></br><span className="text-[#9B86FE] font-[800]"> Recovery</span> <br></br>Solution</h2>,
             description: "Implement AWS Elastic Disaster Recovery for business continuity.",
-            icon: "/AWS/Recovery.svg",
+            icon: "/AWS/recovery.svg",
         }
     ]
 
