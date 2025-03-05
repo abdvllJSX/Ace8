@@ -38,6 +38,7 @@ module.exports = {
         'tomcat-banner': "url('/tomcat/tomcat-banner.png')",
         'banner-outline': "url('/banner-outline.png')",
         'AWS-banner': "url('/AWS/AWS-banner.png')",
+        'AWS-usecase': "url('/AWS/inspiration.png')",
       },
       colors: {
         'bg-100': '#0D1117',

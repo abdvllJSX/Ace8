@@ -35,7 +35,7 @@ const Partner = () => {
 
 
     return (
-        <section className="bg-[#ffffff] sm:px-[10rem] px-[2rem] py-[4rem] sm:py-[7rem]">
+        <section className="bg-[#ffffff] sm:px-[10rem] my-[-.5rem] px-[2rem] py-[4rem] sm:py-[7rem]">
             <h2 className="sm:text-[3.8rem] text-[2.8rem] w-[80%] mx-auto
             sm:w-[100%] sm:mx-0 text-[#000000] text-center font-[700]">Why Choose <span className="font-[400]"> Us as Your</span> AWS <span className="text-[#9B86FE]"> Partner?</span></h2>
 
@@ -67,14 +67,14 @@ const Partner = () => {
                 }
 
             </div>
-            <p className="font-[500] text-[#000000] text-center">With us, your AWS environment is in safe hands.</p>
+            <p className="font-[500] mt-[2rem] sm:mt-[0] text-[#000000] text-center">With us, your AWS environment is in safe hands.</p>
 
         </section>
     );
 }
 
 const Card = ({ title, description, id }) =>
-    <div className={`px-[2rem] pr-[3rem] sm:min-h-[38rem]  h-[75%] min-h-[32rem] sm:col-span-2 ${id == 3 ? "sm:col-start-3" : id === 0 ? "sm:col-start-4" : "" } rounded-[1.5rem] shadow pt-[4rem] pb-[5rem] bg-[#11151A]`}>
+    <div className={`px-[2rem] pr-[3rem] sm:min-h-[38rem] h-[100%] sm:h-[75%] min-h-[32rem] sm:col-span-2 ${id == 3 ? "sm:col-start-3" : id === 0 ? "sm:col-start-4" : "" } rounded-[1.5rem] shadow pt-[4rem] pb-[5rem] bg-[#11151A]`}>
         <Img
             src={`/AWS/0${id}.svg`}
             className={` ${title ? "w-[6rem] h-[6rem]" : "w-[30rem] h-[auto]"}  sm:mb-[8rem] mb-[8rem]`}

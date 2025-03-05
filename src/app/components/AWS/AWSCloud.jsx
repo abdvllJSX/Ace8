@@ -1,5 +1,6 @@
 import ButtonLink from "../common/buttonLink";
 import Img from "../common/image";
+import Brand from "../../components/common/brand";
 
 const AWSCloud = () => {
     const cards = [
@@ -26,9 +27,10 @@ const AWSCloud = () => {
     ]
 
     return (
-        <section className="sm:pt-[5rem] bg-[#0D1117] flex flex-col sm:px-[15rem] sm:pb-[12rem]">
-            <div className="flex flex-col max-w-[90rem] mx-auto">
-                <p className="text-center text-[1.9rem] font-[500]">AWS powers modern businesses with scalable, secure, and cost-effective cloud solutions. Whether you're leveraging AWS for data storage, application development, or enterprise-grade security, our consulting services ensure your AWS environment operates at peak performance while aligning with your business goals.</p>
+        <section className="bg-[#0D1117] px-[2.5rem] flex flex-col sm:px-[15rem] sm:pb-[12rem] pb-[5rem]">
+            <Brand  />
+            <div className="flex flex-col max-w-[90rem] px-[2rem] mx-auto">
+                <p className="text-center sm:text-[1.9rem] font-[500]">AWS powers modern businesses with scalable, secure, and cost-effective cloud solutions. Whether you're leveraging AWS for data storage, application development, or enterprise-grade security, our consulting services ensure your AWS environment operates at peak performance while aligning with your business goals.</p>
 
                 <ButtonLink
                     className={"mx-auto hover:bg-[#5545A0] transition-all duration-300 ease-in-out rounded-[.5rem] border-[#5545A0] font-[800]"}
@@ -37,17 +39,17 @@ const AWSCloud = () => {
                 />
             </div>
 
-            <div className="mt-[14rem] w-[100%] max-w-[1400px] mx-auto sm:flex sm:justify-between">
-                <h2 className="text-[3rem] w-[30rem]">
+            <div className="sm:mt-[14rem] mt-[8rem] w-[100%] max-w-[1400px] mx-auto sm:flex sm:justify-between">
+                <h2 className="text-[3rem] text-center mx-auto w-[30rem]">
                     Expert Guidance for <span className="text-[#FF88C3] font-[700]">AWS Cloud</span> Users
                 </h2>
 
-                <p className="w-[45rem] text-end">
+                <p className="sm:w-[45rem] w-[30rem] mt-[2rem] sm:mt-[0rem] text-center mx-auto sm:text-end">
                     Using AWS? Unlock the full potential of your cloud infrastructure with our specialized services
                 </p>
             </div>
 
-            <div className="mt-[10rem] gap-x-[1.8rem] grid grid-cols-4 max-w-[1400px] mx-auto">
+            <div className="sm:mt-[10rem] mt-[5rem] gap-y-[2rem] sm:gap-x-[1.8rem] grid sm:grid-cols-4 max-w-[1400px] mx-auto">
                 {
                     cards.map((card, index) => {
                         return (<Card
@@ -71,7 +73,7 @@ const AWSCloud = () => {
 
 const Card = ({ title, description, icon }) => {
     return (
-        <div className="bg-[#11151A] rounded-[1rem] flex flex-col gap-y-[2rem] min-h-[45rem] px-[2rem] pt-[4rem]">
+        <div className="bg-[#11151A] rounded-[1rem] flex flex-col gap-y-[2rem] sm:min-h-[45rem] min-h-[35rem] px-[2rem] pt-[4rem]">
             <Img
                 src={icon}
                 className="w-[5rem]"

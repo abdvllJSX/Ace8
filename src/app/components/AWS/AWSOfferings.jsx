@@ -21,10 +21,10 @@ const AWSOfferings = () => {
         }
     ]
     return (
-        <section className="py-[7rem] flex flex-col sm:px-[15rem] text-[#0D1117] bg-white">
-            <h2 className="text-center font-[800] text-[3.5rem]">Thinking About <span className="font-[400]"> Advanced</span> <span className="text-[#FF88C3]">AWS Offerings?</span></h2>
+        <section className="py-[7rem] px-[2.5rem] flex flex-col sm:px-[15rem] text-[#0D1117] bg-white">
+            <h2 className="text-center font-[800] text-[3rem] leading-[3.5rem]">Thinking About <span className="font-[400]"> Advanced</span> <span className="text-[#FF88C3]">AWS Offerings?</span></h2>
             <p className="text-center">If you're exploring premium AWS services, we’ll help you unlock their full potential:</p>
-            <div className="max-w-[1400px] w-[100%] mt-[12rem] flex flex-col gap-y-[6rem] mx-auto">
+            <div className="max-w-[1400px] w-[100%] sm:mt-[12rem] mt-[4rem] flex flex-col gap-y-[6rem] mx-auto">
                 {
                     offerings.map((item, index) =>
                         <Offerings
@@ -34,7 +34,7 @@ const AWSOfferings = () => {
                     )
                 }
             </div>
-            <p className="mt-[6rem] font-[500] sm:text-center">Discover the advantages of advanced AWS offerings with expert guidance.</p>
+            <p className="sm:mt-[6rem] mt-[3rem] font-[500] text-center">Discover the advantages of advanced AWS offerings with expert guidance.</p>
 
             <ButtonLink
                 text={"Learn About Our Advanced Services"}
@@ -47,7 +47,7 @@ const AWSOfferings = () => {
 
 const Offerings = ({ title, text, id }) => {
     return (
-        <div className={`flex ${id % 2 ? "ml-auto" : "mr-auto"} items-center gap-[4rem]`}>
+        <div className={`flex ${id % 2 ? "ml-auto" : "mr-auto"} py- items-center gap-[4rem]`}>
             <h3 className="text-[2.5rem] text-[#FF88C3] font-[700]">{`0${id + 1}`}</h3>
             <div className="">
                 <h4 className="mb-[.5rem] text-[1.8rem] font-[600]">{title}</h4>

@@ -76,10 +76,10 @@ const AWSServices = () => {
     ]
     return (
         <section className="bg-[#0D1117] flex flex-col py-[7rem] pt-[10rem] sm:px-[10rem]">
-            <h3 className="text-[3.8rem] w-[40rem] mx-auto mb-[6rem] text-center">Our Specialized <span className="text-[#FF88C3] font-[600]">AWS</span> <span className="font-[700]">Services</span> </h3>
+            <h3 className="sm:text-[3.8rem] text-[3rem] sm:w-[40rem] mx-auto mb-[6rem] text-center">Our Specialized <span className="text-[#FF88C3] font-[600]">AWS</span> <span className="font-[700]">Services</span> </h3>
 
-            <div className="max-w-[1400px] gap-[2rem] w-[100%] mx-auto flex flex-col justify-center">
-                <div className="grid gap-x-[1.5rem] grid-cols-3">
+            <div className="max-w-[1400px] px-[2rem] gap-[2rem] w-[100%] mx-auto flex flex-col justify-center">
+                <div className="grid sm:gap-x-[1.5rem] gap-y-[2rem] sm:grid-cols-3">
                     {
                         cards.map((card, index) => {
                             if (index < 3) {
@@ -94,7 +94,7 @@ const AWSServices = () => {
                         })
                     }
                 </div>
-                <div className="grid gap-x-[1.5rem] grid-cols-4">
+                <div className="grid sm:gap-x-[1.5rem] gap-y-[2rem] sm:grid-cols-4">
                     {
                         cards.map((card, index) => {
                             if (index >= 3) {
@@ -138,7 +138,7 @@ const Card = ({ title, texts, icon, id }) => {
             {title}
             <ul className="mt-2 text-sm list-inside">
                 {texts.map((text, index) => (
-                    <li key={index} className={`text-[1.4rem]  ${id >= 3 ? "w-[100%]" : "w-[30rem]"} relative pl-[2rem] leading-[2rem] before:absolute before:content-['•'] before:left-0 before:text-white mb-[1rem]`}>{text}</li>
+                    <li key={index} className={`text-[1.4rem]  ${id >= 3 ? "w-[100%]" : "sm:w-[30rem]"} relative pl-[2rem] leading-[2rem] before:absolute before:content-['•'] before:left-0 before:text-white mb-[1rem]`}>{text}</li>
                 ))}
             </ul>
         </div>
