@@ -9,6 +9,7 @@ import Contact from "../../components/common/contact";
 import { slideIn } from "../../Animations/common";
 import { useEffect } from "react";
 import MaxContainer from "../../components/common/maxContainer";
+import UseCase from "@/app/components/tomcat/usecase";
 
 
 const TomCat = () => {
@@ -22,6 +23,7 @@ const TomCat = () => {
             <SupportCloudBased />
             <SupportOnPremises />
             <Partner />
+            <UseCase />
             <CTA />
             <MaxContainer>
                 <Contact />

@@ -67,6 +67,11 @@ const Index = ({ setOpenService }) => {
       <div className="mt-[2rem] sm:mt-[0]">
         <p className="font-[700] sm:mb-[2rem] mb-[.5rem] text-accent-100">Other Service</p>
         <ul className="sm:mb-[3rem] mb-[1.7rem]">
+          <Link href="/services/AWS">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+              AWS Services
+            </li>
+          </Link>
           <Link href="/services/open-source">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               OpenSource Support
@@ -101,7 +106,7 @@ const Index = ({ setOpenService }) => {
 
         <Link href="/services">
           <button className="border-none btn text-accent-100 bg-black">
-           Other services
+            Other services
           </button>
         </Link>
       </div>
