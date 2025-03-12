@@ -1,6 +1,7 @@
 import ButtonLink from "../common/buttonLink";
 import Img from "../common/image";
 import Brand from "../../components/common/brand";
+import MaxConatiner from "../common/maxContainer";
 
 const AWSCloud = () => {
     const cards = [
@@ -28,7 +29,9 @@ const AWSCloud = () => {
 
     return (
         <section className="bg-[#0D1117] px-[2.5rem] flex flex-col sm:px-[15rem] sm:pb-[12rem] pb-[5rem]">
-            <Brand  />
+            <MaxConatiner>
+                <Brand />
+            </MaxConatiner>
             <div className="flex flex-col max-w-[90rem] px-[2rem] mx-auto">
                 <p className="text-center sm:text-[1.9rem] font-[500]">AWS powers modern businesses with scalable, secure, and cost-effective cloud solutions. Whether you're leveraging AWS for data storage, application development, or enterprise-grade security, our consulting services ensure your AWS environment operates at peak performance while aligning with your business goals.</p>
 
@@ -49,7 +52,7 @@ const AWSCloud = () => {
                 </p>
             </div>
 
-            <div className="sm:mt-[10rem] mt-[5rem] gap-y-[2rem] sm:gap-x-[1.8rem] grid sm:grid-cols-4 max-w-[1400px] mx-auto">
+            <div className="sm:mt-[10rem] mt-[5rem] gap-y-[2rem] sm:gap-x-[1.8rem] grid sm:grid-cols-4 max-w-[1700px] mx-auto">
                 {
                     cards.map((card, index) => {
                         return (<Card
