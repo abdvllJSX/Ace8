@@ -76,6 +76,11 @@ const Index = ({ setOpenService, openService }) => {
           Other Service
         </p>
         <ul className="sm:mb-[3rem] mb-[1.7rem]">
+          <Link href="/services/AWS">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+              AWS Services
+            </li>
+          </Link>
           <Link href="/services/open-source">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               OpenSource Support
