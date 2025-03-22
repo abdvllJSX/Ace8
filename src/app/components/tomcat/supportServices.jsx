@@ -36,13 +36,13 @@ const SupportServices = () => {
         <section className="sm:pb-[8rem] sm:py-[0] py-[4rem] bg-[#0D1117]">
             <MaxContainer>
                 <Brand />
-                <div className="flex isolate translate-x-[-7rem] z-[1] border mt-[6rem] mb-[7rem] border-[#9B86FE] bg-[#0B0E12] sm:w-[85rem] mx-auto items-center overflow-y-visible gap-[5rem] justify-between sm:pl-[6rem] relative rounded-[2rem] h-[24rem]">
-                    <p className="sm:w-[55rem]"><span className="font-[700] text-[#9B86FE]">Apache Tomcat</span> is a cornerstone for deploying and managing Java-based applications. Whether on-premises or in the cloud, achieving optimal performance and reliability requires expertise. Our specialized Tomcat services ensure your deployments run smoothly, securely, and aligned with your business goals.</p>
+                <div className="flex sm:flex-row flex-col-reverse  sm:translate-x-[-7rem] z-[1] border sm:mt-[6rem] mt-[10rem] sm:mb-[7rem] mb-[2.5rem] border-[#9B86FE] bg-[#0B0E12] sm:w-[85rem] w-[85%] pb-[3rem] h-[35rem] mx-auto items-center overflow-y-visible gap-[5rem] justify-between sm:pl-[6rem] relative rounded-[2rem] sm:h-[24rem]">
+                    <p className="sm:w-[55rem] w-[80%] text-center sm:text-start"><span className="font-[700] text-[#9B86FE]">Apache Tomcat</span> is a cornerstone for deploying and managing Java-based applications. Whether on-premises or in the cloud, achieving optimal performance and reliability requires expertise. Our specialized Tomcat services ensure your deployments run smoothly, securely, and aligned with your business goals.</p>
 
                     <Img
                         src={"/tomcat/tomcat.svg"}
                         alt="tomcat image"
-                        className="size-[28rem] sm:top-[-3rem] sm:absolute sm:right-[-14rem]"
+                        className="sm:size-[28rem] size-[17rem] sm:top-[-3rem] sm:absolute sm:right-[-14rem]"
 
                     />
                     
