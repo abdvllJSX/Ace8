@@ -1,5 +1,7 @@
 import Img from "../common/image";
 import ButtonLink from "../common/buttonLink";
+import MaxContainer from "../../components/common/maxContainer";
+import Brand from "@/app/components/common/brand";
 
 const SupportServices = () => {
     const services = [
@@ -31,13 +33,26 @@ const SupportServices = () => {
     ]
 
     return (
-        <section className="sm:py-[8rem] py-[4rem] bg-[#0D1117]">
-            <p className="sm:max-w-[110rem] max-w-[30rem] text-center mx-auto"><span className="text-[#9B86FE]">Apache Tomcat</span> is a cornerstone for deploying and managing Java-based applications. Whether on-premises or in the cloud, achieving optimal performance and reliability requires expertise. Our specialized Tomcat services ensure your deployments run smoothly, securely, and aligned with your business goals.</p>
+        <section className="sm:pb-[8rem] sm:py-[0] py-[4rem] bg-[#0D1117]">
+            <MaxContainer>
+                <Brand />
+                <div className="flex isolate z-[1] border mt-[6rem] mb-[7rem] border-[#9B86FE] bg-[#0B0E12] sm:w-[85rem] mx-auto items-center overflow-y-visible gap-[5rem] justify-between sm:pl-[6rem] relative rounded-[2rem] h-[24rem]">
+                    <p className="sm:w-[55rem]"><span className="font-[700] text-[#9B86FE]">Apache Tomcat</span> is a cornerstone for deploying and managing Java-based applications. Whether on-premises or in the cloud, achieving optimal performance and reliability requires expertise. Our specialized Tomcat services ensure your deployments run smoothly, securely, and aligned with your business goals.</p>
+
+                    <Img
+                        src={"/tomcat/tomcat.svg"}
+                        alt="tomcat image"
+                        className="size-[28rem] top-[-3rem] absolute right-[-14rem]"
+
+                    />
+                    
+                </div>
+            </MaxContainer>
 
             <div className="mt-[5rem] flex flex-col">
                 <h2 className="sm:text-[3.8rem] text-[2.6rem] sm:max-w-[65rem] max-w-[25rem] mx-auto text-center font-[800]"><span className="font-[400]">Comprehensive</span> <span className="text-[#FF88C3]">Tomcat Consulting </span>
                     & Support Services</h2>
-                
+
                 <div className="max-w-[1400px] mt-[4rem] justify-items-center gap-y-[6rem] grid sm:grid-rows-2 sm:grid-cols-6 mx-auto">
                     {
                         services.map((service, index) => {
