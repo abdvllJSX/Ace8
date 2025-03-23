@@ -54,7 +54,7 @@ const Index = () => {
     { label: "Home", link: "/" },
     { label: "About us", link: "/about" },
     { label: "Services", link: "/service" },
-    { label: "Blog", link: "/blogs" },
+    { label: "Blog", link: "#" },
     { label: "Customer Stories", link: "/stories" },
   ];
 
