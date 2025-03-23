@@ -1,10 +1,17 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const Body = () => {
+  useEffect(() => {
+    if (!window.hasSentThankYouEvent) {
+      sendGTMEvent({ event: "thank_you" });
+      window.hasSentThankYouEvent = true;
+    }
+  }, []);
   return (
-    <div className="flex h-screen  items-center justify-center">
+    <div className="flex h-screen items-center justify-center">
       <div>
         <div className="flex flex-col items-center space-y-4">
           <svg
@@ -23,7 +30,7 @@ const Body = () => {
           </svg>
 
           <h1 className="sm:text-8xl text-[2.5rem] font-bold">Thank You!</h1>
-          
+
           <p className="sm:text-3xl text-[1.5rem]  sm:w-full w-[80%] text-center">
             Thank you for your interest! We will contact you soon.
           </p>
