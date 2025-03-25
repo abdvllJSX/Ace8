@@ -73,7 +73,7 @@ const Index = ({ setOpenService, openService }) => {
       </div>
       <div className="mt-[2rem] sm:mt-[0]">
         <p className="font-[700] sm:mb-[2rem] mb-[.5rem] text-accent-100">
-          Other Service
+          Other Services
         </p>
         <ul className="sm:mb-[3rem] mb-[1.7rem]">
           <Link href="/services/aws">
