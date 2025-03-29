@@ -1,4 +1,4 @@
-import ButtonLink from "../common/ButtonLink";
+import ButtonLink from "../common/buttonLink";
 import Img from "../common/image";
 import Link from "next/link";
 

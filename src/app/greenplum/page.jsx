@@ -9,7 +9,7 @@ import Services from "../components/greenplumn/services";
 import Differentiators from "../components/greenplumn/differentiators";
 import CTA from "../components/greenplumn/cta";
 import Contact from "@/app/components/common/contact";
-import Maxcontainer from "@/app/components/common/maxcontainer";
+import Maxcontainer from "@/app/components/common/maxContainer";
 import { slideIn } from "../Animations/common";
 
 const GreenPlumn = () => {
