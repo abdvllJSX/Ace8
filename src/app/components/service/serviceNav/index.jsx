@@ -75,7 +75,7 @@ const Index = ({ setOpenService, openService }) => {
           Other Services
         </p>
         <ul className="sm:mb-[3rem] mb-[1.7rem]">
-          <Link href="/services/AWS">
+          <Link href="/services/aws">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               AWS Services
             </li>
