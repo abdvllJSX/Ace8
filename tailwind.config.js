@@ -39,6 +39,8 @@ module.exports = {
         'banner-outline': "url('/banner-outline.png')",
         'AWS-banner': "url('/AWS/AWS-banner.png')",
         'AWS-usecase': "url('/AWS/inspiration.png')",
+        'nignix-hero-border': "url('/nignix/nignix-border.png')",
+        'nignix-hero-border-sm': "url('/nignix/nignix-border-sm.png')",
       },
       colors: {
         'bg-100': '#0D1117',

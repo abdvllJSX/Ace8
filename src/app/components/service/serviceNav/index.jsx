@@ -91,6 +91,11 @@ const Index = ({ setOpenService, openService }) => {
               Microservices
             </li>
           </Link>
+          <Link href="/greenplum">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+              GreenPlum
+            </li>
+          </Link>
           <Link href="/services/OBAAS">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               Onboarding as a Service

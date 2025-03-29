@@ -11,7 +11,7 @@ const Index = () => {
   const IsMicroService = pathName == "/services/micro-service";
   const [open, setOpen] = useState(false);
   const [openService, setOpenService] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // New state for scroll detection
+  const [isScrolled, setIsScrolled] = useState(false); 
 
   const toggleNav = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -33,11 +33,9 @@ const Index = () => {
     setOpenService(false);
   }, [pathName]);
 
-  // Scroll effect to change background color
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // You can adjust the scroll threshold
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
