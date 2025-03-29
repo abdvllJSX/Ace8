@@ -5,9 +5,8 @@ import { usePathname } from "next/navigation";
 const Index = ({ setOpenService, openService }) => {
   return (
     <div
-      className={`${
-        openService ? "sm:flex" : "hidden"
-      } fixed top-[20rem] sm:top-[10rem] rounded-[.8rem] sm:rounded-[0] sm:px-[10rem] px-[3rem] sm:w-auto w-[32rem] sm:h-auto py-[2rem] sm:py-[5rem] bg-[#161b22] z-[33] gap-[3rem]`}
+      className={`${openService ? "sm:flex" : "hidden"
+        } fixed top-[20rem] sm:top-[10rem] rounded-[.8rem] sm:rounded-[0] sm:px-[10rem] px-[3rem] sm:w-auto w-[32rem] sm:h-auto py-[2rem] sm:py-[5rem] bg-[#161b22] z-[33] gap-[3rem]`}
     >
       <button
         onClick={() => setOpenService(false)}
@@ -96,11 +95,6 @@ const Index = ({ setOpenService, openService }) => {
               GreenPlum
             </li>
           </Link>
-          <Link href="/services/OBAAS">
-            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
-              Onboarding as a Service
-            </li>
-          </Link>
           <Link href="/services/data-integration">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               Data Analytics Integration
@@ -111,9 +105,19 @@ const Index = ({ setOpenService, openService }) => {
               Automated Testing
             </li>
           </Link>
+          <Link href="/nignix">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+              Nignix
+            </li>
+          </Link>
           <Link href="/services/tomcat">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               Tomcat
+            </li>
+          </Link>
+          <Link href="/services/OBAAS">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+              Onboarding as a Service
             </li>
           </Link>
         </ul>

@@ -1,7 +1,7 @@
 import Img from "../common/image";
 import ButtonLink from "../common/buttonLink";
 import Brand from "../common/brand";
-import MaxContainer from "../common/maxcontainer";
+import MaxContainer from "../common/maxContainer";
 
 
 const Hero = () => {

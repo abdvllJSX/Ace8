@@ -1,4 +1,4 @@
-import ButtonLink from "../common/ButtonLink";
+import ButtonLink from "../common/buttonLink";
 
 
 const CTA = () => {
