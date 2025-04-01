@@ -91,6 +91,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: "https://www.ace8.io/services/aws",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.ace8.io/stories",
       lastModified: new Date(),
       changeFrequency: "monthly",
