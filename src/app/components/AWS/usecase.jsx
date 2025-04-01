@@ -2,7 +2,7 @@ import Img from "../common/image";
 
 const UseCase = () => {
     return (
-        <section className="sm:px-[10rem]  bg-[#0D1117] pt-[5rem] sm:pt-[13rem]">
+        <section className="sm:px-[10rem] border bg-[#0D1117] pt-[5rem] sm:pt-[0]">
             <div className="flex max-w-[1600px] mx-auto sm:bg-[length:100%_100%] sm:bg-AWS-usecase sm:max-h-[60rem] gap-[3rem] bg-no-repeat sm:px-[7rem] sm:pt-[7rem] px-[2.5rem]">
                 <div className="border rounded-[1.5rem] p-[2rem] border-[#9B86FE] sm:border-none">
                     <h2 className="text-[3rem] leading-[3.5rem] sm:leading-[4.5rem] text-center sm:text-start font-[800] max-w-[60rem]">

@@ -85,6 +85,11 @@ const Index = ({ setOpenService, openService }) => {
               OpenSource Support
             </li>
           </Link>
+          <Link href="/observability">
+            <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
+                Observablility
+            </li>
+          </Link>
           <Link href="/services/micro-service">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               Microservices
