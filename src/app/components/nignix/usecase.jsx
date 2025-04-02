@@ -23,7 +23,7 @@ const UseCase = () => {
                 />
             </div>
         </section>
-    );
+    )
 }
 
 export default UseCase;
