@@ -49,7 +49,7 @@ const Guildance = () => {
             <ButtonLink 
                 text={"Explore Our Open-Source Services"}
                 className={"mx-auto border-[#5545A0] font-[700] rounded-[1rem]"}
-                link={""}
+                link={"#contact"}
             />
         </section>
     );

@@ -53,7 +53,7 @@ const solution = () => {
                 <p className="text-center mt-[3rem] sm:mt-[6rem]">Stay ahead with solutions tailored to your unique Nginx requirements.</p>
                 <ButtonLink
                     text={"Explore Our Nginx Services"}
-                    link={""}
+                    link={"#contact"}
                     className={"border-[2px] mx-auto border-[#8FD5CC] font-[700] rounded-[.5rem]"}
                 />
             </section>
@@ -72,7 +72,7 @@ const solution = () => {
                 <p className="text-center mt-[3rem] sm:mt-[6rem]">Discover the advantages of advanced Nginx implementations with expert guidance.</p>
                 <ButtonLink
                     text={"Learn About Our Advanced Solutions"}
-                    link={""}
+                    link={"#contact"}
                     className={"border-[2px] mx-auto border-[#8FD5CC] font-[700] rounded-[.5rem]"}
                 />
             </section>

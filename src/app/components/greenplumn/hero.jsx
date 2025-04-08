@@ -27,7 +27,7 @@ const Hero = () => {
 
             <ButtonLink
                 text={"Connect with Our Greenplum Experts"}
-                link={""}
+                link={"#contact"}
                 className={"border-[#5545A0] rounded-[1rem] mx-auto font-[700]"}
             />
         </section>

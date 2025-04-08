@@ -61,7 +61,7 @@ const Index = ({ route }) => {
   };
   return (
     <section
-      className="sm:px-[10rem] overflow-hidden sm:mt-[7rem] pb-[5rem] scroll-mt-[5rem]"
+      className="sm:px-[10rem] overflow-hidden sm:mt-[7rem] pb-[5rem] scroll-mt-[15rem]"
       id="contact"
     >
       <ToastContainer />

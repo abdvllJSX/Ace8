@@ -52,7 +52,7 @@ const Tanzu = () => {
             <ButtonLink
                 text={"Learn About VMware Tanzu Support"}
                 className={"border-[#5545A0] rounded-[1rem] font-[700] mx-auto"}
-                link={""}
+                link={"#contact"}
             />
         </section>
     );

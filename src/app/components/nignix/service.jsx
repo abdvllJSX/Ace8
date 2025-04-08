@@ -75,7 +75,7 @@ const Services = () => {
             <ButtonLink
                 text={"Contact Us for a Free Consultation"}
                 className={"font-[700] mx-auto border-[2px] rounded-[.5rem] border-[#8FD5CC]"}
-                link={""} 
+                link={"#contact"} 
             />
         </section>
     );
