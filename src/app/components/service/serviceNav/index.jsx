@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 const Index = ({ setOpenService, openService }) => {
   return (
     <div
-      className={`${openService ? "sm:flex" : "hidden"
-        } fixed top-[20rem] sm:top-[10rem] rounded-[.8rem] sm:rounded-[0] sm:px-[10rem] px-[3rem] sm:w-auto w-[32rem] sm:h-auto py-[2rem] sm:py-[5rem] bg-[#161b22] z-[33] gap-[3rem]`}
+      className={`${
+        openService ? "sm:flex" : "hidden"
+      } fixed top-[20rem] sm:top-[10rem] rounded-[.8rem] sm:rounded-[0] sm:px-[10rem] px-[3rem] sm:w-auto w-[32rem] sm:h-auto py-[2rem] sm:py-[5rem] bg-[#161b22] z-[33] gap-[3rem]`}
     >
       <button
         onClick={() => setOpenService(false)}
@@ -85,9 +86,9 @@ const Index = ({ setOpenService, openService }) => {
               OpenSource Support
             </li>
           </Link>
-          <Link href="/observability">
+          <Link href="/services/observability">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
-                Observablility
+              Observablility
             </li>
           </Link>
           <Link href="/services/micro-service">
@@ -95,7 +96,7 @@ const Index = ({ setOpenService, openService }) => {
               Microservices
             </li>
           </Link>
-          <Link href="/greenplum">
+          <Link href="/services/greenplum">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               GreenPlum
             </li>
@@ -110,7 +111,7 @@ const Index = ({ setOpenService, openService }) => {
               Automated Testing
             </li>
           </Link>
-          <Link href="/nignix">
+          <Link href="/services/nignix">
             <li className="font-[500] text-[1.4rem] mb-[.5rem] hover:text-accent-100 text-[#FF88C3] transition-all">
               Nignix
             </li>
