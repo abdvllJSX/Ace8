@@ -5,6 +5,7 @@ import Footer from "./components/common/footer";
 import Navbar from "./components/common/navbar";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import CookiesConsent from "./components/common/cookiesconsent";
+import IntercomWidget from "./components/common/intercomWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 const monaSans = localFont({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <body className={monaSans.className}>
         <Navbar />
         {children}
+        <IntercomWidget />
         <CookiesConsent />
         <Footer />
       </body>
