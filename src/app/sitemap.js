@@ -97,6 +97,24 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: "https://www.ace8.io/services/greenplum",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://www.ace8.io/services/nignix",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: "https://www.ace8.io/services/observability",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.ace8.io/stories",
       lastModified: new Date(),
       changeFrequency: "monthly",
