@@ -52,7 +52,7 @@ const Index = () => {
     { label: "Home", link: "/" },
     { label: "About us", link: "/about" },
     { label: "Services", link: "/service" },
-    { label: "Blog", link: "#" },
+    { label: "Blog", link: "/blogs" },
     { label: "Customer Stories", link: "/stories" },
   ];
 

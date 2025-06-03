@@ -1,7 +1,5 @@
 "use client";
 import Link from "next/link";
-import { useEffect } from "react";
-import { usePathname } from "next/navigation";
 const Index = ({ setOpenService, openService }) => {
   return (
     <div

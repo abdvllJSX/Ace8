@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { slugify } from "@/app/utili/slugify";
+
 const Index = () => {
     const posts = [
         {
@@ -55,7 +57,7 @@ const Index = () => {
             text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
             link: ''
         },
-        
+
     ]
     return (
         <section className="bg-white px-[3rem] sm:px-[10rem] py-[5rem] text-[#232323]">
@@ -66,21 +68,21 @@ const Index = () => {
                             <p className="font-[600]">Featured</p>
                             <Date />
                         </div>
-                        <h2 className="text-[2.5rem] font-[700] text-black mb-[1rem]">Advent of Code 2023</h2>
-                        <p className="mb-[1.5rem] hidden sm:block sm:w-[80%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <h2 className="text-[2.5rem] font-[700] text-black mb-[1rem]">Mastering Incident Management: How Ace8 Delivers Resilience and Rapid Recovery</h2>
+                        <p className="mb-[1.5rem] hidden sm:block sm:w-[80%]">In the era of always-on digital business, incident management is no longer a back-office function—it's a strategic imperative</p>
 
-                        <button className="font-[700] text-[1.4rem] pr-[1rem] sm:block hidden mb-[3rem] border-b-[2px] border-[#5747A5]">Read Post</button>
+                        <Link href={`/blogs/${slugify("Mastering Incident Management: How Ace8 Delivers Resilience and Rapid Recovery")}/`} className="font-[700] w-[8rem] text-[1.4rem] pr-[1rem] sm:block hidden mb-[3rem] border-b-[2px] border-[#5747A5]">Read Post</Link>
                     </div>
 
-                    <img src="/advent_of_code.png" alt="" className="mb-[1.5rem] sm:w-[45rem] sm:flex-1" />
+                    <img src="/blogs/mastering_incident_management.jpg" alt="" className="mb-[1.5rem] sm:w-[45rem] sm:flex-1" />
                     <p className="mb-[1.5rem] sm:hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
 
                     <Link href={''} className="font-[700] text-[1.4rem] pr-[1rem] sm:hidden mb-[3rem] border-b-[2px] border-[#5747A5]">Read Post</Link>
                 </div>
-                <div className="responsive-grid mt-[3rem] sm:mt-[0]">
-                    {posts.map((post, index) => <Post post={post} key={index}  style={''} />)}
+                {/* <div className="responsive-grid mt-[3rem] sm:mt-[0]">
+                    {posts.map((post, index) => <Post post={post} key={index} style={''} />)}
                 </div>
-                <button className="btn border-[#8167FF] border-[2px] text-[#8167FF] self-center sm:mt-[4.5rem]">View More</button>
+                <button className="btn border-[#8167FF] border-[2px] text-[#8167FF] self-center sm:mt-[4.5rem]">View More</button> */}
             </div>
         </section>
     );
