@@ -4,60 +4,11 @@ import { slugify } from "@/app/utili/slugify";
 const Index = () => {
     const posts = [
         {
-            image: '/blog_post_1.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
+            image: '/blogs/observablity.jpg',
+            header: 'Observability Consulting: The Key to Modern System Reliability and Performance',
+            text: 'In today’s fast-evolving digital landscape, organizations face unprecedented challenges in maintaining the reliability, performance, and security of their complex IT systems',
             link: ''
         },
-        {
-            image: '/blog_post_2.svg',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_3.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_4.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_5.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_6.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_7.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_8.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-        {
-            image: '/blog_post_9.png',
-            header: 'MongooseIM 6.2: Easy to set up, use and manage',
-            text: 'Discover MongooseIM 6.2 for streamlined messaging with easy clustering and updated XMPP extensions, enhancing user-friendliness and cost efficiency.',
-            link: ''
-        },
-
     ]
     return (
         <section className="bg-white px-[3rem] sm:px-[10rem] py-[5rem] text-[#232323]">
@@ -79,10 +30,10 @@ const Index = () => {
 
                     <Link href={''} className="font-[700] text-[1.4rem] pr-[1rem] sm:hidden mb-[3rem] border-b-[2px] border-[#5747A5]">Read Post</Link>
                 </div>
-                {/* <div className="responsive-grid mt-[3rem] sm:mt-[0]">
+                <div className="grid sm:grid-cols-3 mt-[3rem] sm:mt-[0]">
                     {posts.map((post, index) => <Post post={post} key={index} style={''} />)}
                 </div>
-                <button className="btn border-[#8167FF] border-[2px] text-[#8167FF] self-center sm:mt-[4.5rem]">View More</button> */}
+                {/* <button className="btn border-[#8167FF] border-[2px] text-[#8167FF] self-center sm:mt-[4.5rem]">View More</button> */}
             </div>
         </section>
     );
@@ -98,10 +49,10 @@ const Post = ({ style, post }) => {
         <div className={`${style} flex flex-col w-[25rem] mx-auto sm:w-[35rem] self-center`}>
             <Date style={'self-end  mb-[1rem] sm:hidden'} />
             <img src={post.image} alt="blog_post" className="" />
-            <p className="text-[#8167FF] mb-[.5rem]">{post.header}</p>
-            <h2 className="text-[1.5rem] w-[90%] font-[700] sm:text-[1.8rem]">MongooseIM 6.2: Easy to set up, use and manage</h2>
-            <p className="mt-[2rem]">{post.text}.</p>
-            <Link href={post.link} className="font-[700] mt-[1rem] self-start text-[1.4rem] pr-[1rem] mb-[3rem] border-b-[2px] border-[#5747A5]">Read More</Link>
+            {/* <p className="text-[#8167FF] mb-[.5rem]">{post.header}</p> */}
+            <h2 className="text-[1.5rem] line-clamp-2 mt-[1.5rem] w-[90%] font-[700] sm:text-[1.8rem]">{post.header}</h2>
+            <p className="mt-[2rem] line-clamp-3">{post.text}.</p>
+            <Link href={`/blogs/${slugify(post.header)}/`} className="font-[700] w-[8rem] text-[1.4rem] pr-[1rem] sm:block hidden mb-[3rem] border-b-[2px] border-[#5747A5]">Read Post</Link>
         </div>
     )
 }
