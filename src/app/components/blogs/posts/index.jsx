@@ -9,6 +9,12 @@ const Index = () => {
             text: 'In today’s fast-evolving digital landscape, organizations face unprecedented challenges in maintaining the reliability, performance, and security of their complex IT systems',
             link: ''
         },
+        {
+            image: '/blogs/gemfire.jpg',
+            header: 'GemFire Consulting: Unlocking High-Performance Data Solutions for Modern Enterprises',
+            text: 'In a landscape where digital transformation and real-time analytics are vital to business success, organizations must adopt robust and scalable data management systems that can handle vast and ever-changing workloads',
+            link: ''
+        },
     ]
     return (
         <section className="bg-white px-[3rem] sm:px-[10rem] py-[5rem] text-[#232323]">
