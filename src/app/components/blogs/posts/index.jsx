@@ -15,6 +15,11 @@ const Index = () => {
             text: 'In a landscape where digital transformation and real-time analytics are vital to business success, organizations must adopt robust and scalable data management systems that can handle vast and ever-changing workloads',
             link: ''
         },
+        {
+            image: "/blogs/nginx.jpg",
+            header: "Nginx Consulting: Building Resilient, High-Performance Web Infrastructure",
+            text: "In the age of digital transformation, organizations face escalating pressure to deliver lightning-fast"
+        }
     ]
     return (
         <section className="bg-white px-[3rem] sm:px-[10rem] py-[5rem] text-[#232323]">
