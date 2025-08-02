@@ -19,6 +19,11 @@ const Index = () => {
             image: "/blogs/nginx.jpg",
             header: "Nginx Consulting: Building Resilient, High-Performance Web Infrastructure",
             text: "In the age of digital transformation, organizations face escalating pressure to deliver lightning-fast"
+        },
+        {
+            image: "/blogs/tanzu.jpg",
+            header: "Tanzu RabbitMQ Licensing: The Complete Guide to Enterprise Messaging Value",
+            text: "In the world of enterprise IT, the right message broker can be the difference between scalable success and exponential headaches",
         }
     ]
     return (
